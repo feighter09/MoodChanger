@@ -21,6 +21,14 @@
 		7A8E1719189A44AD000D5E6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8E16FB189A44AD000D5E6D /* UIKit.framework */; };
 		7A8E1721189A44AD000D5E6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A8E171F189A44AD000D5E6D /* InfoPlist.strings */; };
 		7A8E1723189A44AD000D5E6D /* MoodChangerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E1722189A44AD000D5E6D /* MoodChangerTests.m */; };
+		7A8E172E189A459B000D5E6D /* CameraServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E172D189A459B000D5E6D /* CameraServer.m */; };
+		7A8E1737189A45BF000D5E6D /* AVEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E1730189A45BF000D5E6D /* AVEncoder.mm */; };
+		7A8E1738189A45BF000D5E6D /* MP4Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E1732189A45BF000D5E6D /* MP4Atom.m */; };
+		7A8E1739189A45BF000D5E6D /* NALUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E1733189A45BF000D5E6D /* NALUnit.cpp */; };
+		7A8E173A189A45BF000D5E6D /* VideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E1736189A45BF000D5E6D /* VideoEncoder.m */; };
+		7A8E1742189A45DA000D5E6D /* RTSPClientConnection.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E173D189A45DA000D5E6D /* RTSPClientConnection.mm */; };
+		7A8E1743189A45DA000D5E6D /* RTSPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E173F189A45DA000D5E6D /* RTSPMessage.m */; };
+		7A8E1744189A45DA000D5E6D /* RTSPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8E1741189A45DA000D5E6D /* RTSPServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,22 @@
 		7A8E171E189A44AD000D5E6D /* MoodChangerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoodChangerTests-Info.plist"; sourceTree = "<group>"; };
 		7A8E1720189A44AD000D5E6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A8E1722189A44AD000D5E6D /* MoodChangerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodChangerTests.m; sourceTree = "<group>"; };
+		7A8E172C189A459B000D5E6D /* CameraServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraServer.h; sourceTree = "<group>"; };
+		7A8E172D189A459B000D5E6D /* CameraServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraServer.m; sourceTree = "<group>"; };
+		7A8E172F189A45BF000D5E6D /* AVEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVEncoder.h; sourceTree = "<group>"; };
+		7A8E1730189A45BF000D5E6D /* AVEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AVEncoder.mm; sourceTree = "<group>"; };
+		7A8E1731189A45BF000D5E6D /* MP4Atom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP4Atom.h; sourceTree = "<group>"; };
+		7A8E1732189A45BF000D5E6D /* MP4Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MP4Atom.m; sourceTree = "<group>"; };
+		7A8E1733189A45BF000D5E6D /* NALUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NALUnit.cpp; sourceTree = "<group>"; };
+		7A8E1734189A45BF000D5E6D /* NALUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NALUnit.h; sourceTree = "<group>"; };
+		7A8E1735189A45BF000D5E6D /* VideoEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEncoder.h; sourceTree = "<group>"; };
+		7A8E1736189A45BF000D5E6D /* VideoEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoEncoder.m; sourceTree = "<group>"; };
+		7A8E173C189A45DA000D5E6D /* RTSPClientConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPClientConnection.h; sourceTree = "<group>"; };
+		7A8E173D189A45DA000D5E6D /* RTSPClientConnection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RTSPClientConnection.mm; sourceTree = "<group>"; };
+		7A8E173E189A45DA000D5E6D /* RTSPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPMessage.h; sourceTree = "<group>"; };
+		7A8E173F189A45DA000D5E6D /* RTSPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPMessage.m; sourceTree = "<group>"; };
+		7A8E1740189A45DA000D5E6D /* RTSPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPServer.h; sourceTree = "<group>"; };
+		7A8E1741189A45DA000D5E6D /* RTSPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPServer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +136,10 @@
 		7A8E16FD189A44AD000D5E6D /* MoodChanger */ = {
 			isa = PBXGroup;
 			children = (
+				7A8E1745189A45DE000D5E6D /* RTSP */,
+				7A8E173B189A45CA000D5E6D /* AVEncoder */,
+				7A8E172C189A459B000D5E6D /* CameraServer.h */,
+				7A8E172D189A459B000D5E6D /* CameraServer.m */,
 				7A8E1706189A44AD000D5E6D /* MCAppDelegate.h */,
 				7A8E1707189A44AD000D5E6D /* MCAppDelegate.m */,
 				7A8E1709189A44AD000D5E6D /* Main.storyboard */,
@@ -150,6 +178,34 @@
 				7A8E171F189A44AD000D5E6D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A8E173B189A45CA000D5E6D /* AVEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				7A8E172F189A45BF000D5E6D /* AVEncoder.h */,
+				7A8E1730189A45BF000D5E6D /* AVEncoder.mm */,
+				7A8E1731189A45BF000D5E6D /* MP4Atom.h */,
+				7A8E1732189A45BF000D5E6D /* MP4Atom.m */,
+				7A8E1733189A45BF000D5E6D /* NALUnit.cpp */,
+				7A8E1734189A45BF000D5E6D /* NALUnit.h */,
+				7A8E1735189A45BF000D5E6D /* VideoEncoder.h */,
+				7A8E1736189A45BF000D5E6D /* VideoEncoder.m */,
+			);
+			name = AVEncoder;
+			sourceTree = "<group>";
+		};
+		7A8E1745189A45DE000D5E6D /* RTSP */ = {
+			isa = PBXGroup;
+			children = (
+				7A8E173C189A45DA000D5E6D /* RTSPClientConnection.h */,
+				7A8E173D189A45DA000D5E6D /* RTSPClientConnection.mm */,
+				7A8E173E189A45DA000D5E6D /* RTSPMessage.h */,
+				7A8E173F189A45DA000D5E6D /* RTSPMessage.m */,
+				7A8E1740189A45DA000D5E6D /* RTSPServer.h */,
+				7A8E1741189A45DA000D5E6D /* RTSPServer.m */,
+			);
+			name = RTSP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8E173A189A45BF000D5E6D /* VideoEncoder.m in Sources */,
+				7A8E1742189A45DA000D5E6D /* RTSPClientConnection.mm in Sources */,
+				7A8E1739189A45BF000D5E6D /* NALUnit.cpp in Sources */,
+				7A8E1744189A45DA000D5E6D /* RTSPServer.m in Sources */,
 				7A8E1708189A44AD000D5E6D /* MCAppDelegate.m in Sources */,
+				7A8E172E189A459B000D5E6D /* CameraServer.m in Sources */,
 				7A8E170E189A44AD000D5E6D /* MCViewController.m in Sources */,
 				7A8E1704189A44AD000D5E6D /* main.m in Sources */,
+				7A8E1738189A45BF000D5E6D /* MP4Atom.m in Sources */,
+				7A8E1743189A45DA000D5E6D /* RTSPMessage.m in Sources */,
+				7A8E1737189A45BF000D5E6D /* AVEncoder.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
