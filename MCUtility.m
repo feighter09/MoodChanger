@@ -66,4 +66,25 @@
       break;
   }
 }
+
++ (AVCaptureDevice *)frontCamera {
+  
+  NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+  for (AVCaptureDevice *device in devices) {
+    if ([device position] == AVCaptureDevicePositionFront) {
+      if ([device isFocusModeSupported:AVCaptureFocusModeContinuousAutoFocus]) {
+        CGPoint autofocusPoint = CGPointMake(0.5f, 0.5f);
+        [device setFocusPointOfInterest:autofocusPoint];
+        [device setFocusMode:AVCaptureFocusModeContinuousAutoFocus];
+        
+        if ([device isWhiteBalanceModeSupported:AVCaptureWhiteBalanceModeContinuousAutoWhiteBalance]) {
+          [device setWhiteBalanceMode:AVCaptureWhiteBalanceModeContinuousAutoWhiteBalance];
+        }
+      }
+      return device;
+    }
+  }
+  return nil;
+}
+
 @end

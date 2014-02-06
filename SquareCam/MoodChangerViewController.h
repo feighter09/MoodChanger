@@ -47,12 +47,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "SmileDetector.h"
-@class CIDetector;
+#import "MoodFeed.h"
 
 @interface MoodChangerViewController : UIViewController <SmileDetectorDelegate>
-
-@property (strong, nonatomic) IBOutlet UIView *previewView;
-@property (strong, nonatomic) SmileDetector *capture;
 
 @end

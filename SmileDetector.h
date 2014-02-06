@@ -22,7 +22,7 @@
 
 @property (strong, nonatomic) id delegate;
 
-@property (strong, nonatomic) AVCaptureSession *session;
+@property (strong, nonatomic) AVCaptureSession *AVsession;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
 
 @property (strong, nonatomic) AVCaptureVideoDataOutput *videoDataOutput;
@@ -34,9 +34,6 @@
 
 + (id)newWithDelegate:(id)delegate;
 - (id)initWithDelegate:(id)delegate;
-
-- (void)start;
-- (void)stop;
 
 - (void)setDetectionAccuracy:(NSString *)accuracy;
 

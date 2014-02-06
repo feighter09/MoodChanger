@@ -59,16 +59,14 @@
 @implementation MoodChangerViewController
 
 - (void)dealloc {
-	[_capture stop];
 }
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
-  _capture = [SmileDetector newWithDelegate:self];
-  [_capture start];
+  MoodFeed *mf = [MoodFeed new];
+  [mf startAnalysis];
 }
 
 @end

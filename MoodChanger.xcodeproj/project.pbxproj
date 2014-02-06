@@ -26,11 +26,11 @@
 		2BA4851113F1E6CC000BABB3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA4850E13F1E6CC000BABB3 /* MainStoryboard_iPhone.storyboard */; };
 		2BA4851713F1E6DB000BABB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA4851313F1E6DB000BABB3 /* main.m */; };
 		2BA4851813F1E6DB000BABB3 /* squarePNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2BA4851513F1E6DB000BABB3 /* squarePNG.png */; };
-		2BA4851A13F1EC39000BABB3 /* ReadMe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BA4851913F1EC39000BABB3 /* ReadMe.txt */; };
 		7A1C4F1818A0F6FD003E45C6 /* squareBlackPNG.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1C4F1718A0F6FD003E45C6 /* squareBlackPNG.png */; };
 		7A6FE368189F379100C6C51F /* ImageProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FE367189F379100C6C51F /* ImageProcessing.m */; };
 		7A6FE36C189F383D00C6C51F /* SmileDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6FE36B189F383D00C6C51F /* SmileDetector.m */; };
 		7A70363A18A37185007CAD3F /* MCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70363918A37185007CAD3F /* MCUtility.m */; };
+		7A70363D18A381A5007CAD3F /* MoodFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A70363C18A381A5007CAD3F /* MoodFeed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +56,6 @@
 		2BA4851313F1E6DB000BABB3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SquareCam/main.m; sourceTree = SOURCE_ROOT; };
 		2BA4851413F1E6DB000BABB3 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = SquareCam/Prefix.pch; sourceTree = SOURCE_ROOT; };
 		2BA4851513F1E6DB000BABB3 /* squarePNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squarePNG.png; path = SquareCam/squarePNG.png; sourceTree = SOURCE_ROOT; };
-		2BA4851913F1EC39000BABB3 /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		7A1C4F1718A0F6FD003E45C6 /* squareBlackPNG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareBlackPNG.png; sourceTree = SOURCE_ROOT; };
 		7A6FE366189F379100C6C51F /* ImageProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessing.h; sourceTree = SOURCE_ROOT; };
 		7A6FE367189F379100C6C51F /* ImageProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageProcessing.m; sourceTree = SOURCE_ROOT; };
@@ -64,6 +63,8 @@
 		7A6FE36B189F383D00C6C51F /* SmileDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmileDetector.m; sourceTree = SOURCE_ROOT; };
 		7A70363818A37185007CAD3F /* MCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUtility.h; sourceTree = SOURCE_ROOT; };
 		7A70363918A37185007CAD3F /* MCUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUtility.m; sourceTree = SOURCE_ROOT; };
+		7A70363B18A381A5007CAD3F /* MoodFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodFeed.h; sourceTree = SOURCE_ROOT; };
+		7A70363C18A381A5007CAD3F /* MoodFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodFeed.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				2B0EF003170E3E3A008EDA06 /* Default-568h@2x.png */,
-				2BA4851913F1EC39000BABB3 /* ReadMe.txt */,
 				1B867FE2139D4AD300AD6B47 /* MoodChanger */,
 				1B867FDB139D4AD300AD6B47 /* Frameworks */,
 				1B867FD9139D4AD300AD6B47 /* Products */,
@@ -126,6 +126,7 @@
 		1B867FE2139D4AD300AD6B47 /* MoodChanger */ = {
 			isa = PBXGroup;
 			children = (
+				7A70363E18A381B4007CAD3F /* API */,
 				7A6FE36D189F50C500C6C51F /* Utility */,
 				7A6FE369189F382500C6C51F /* Camera Capture */,
 				2BA4850313F1E6AA000BABB3 /* MoodChangerAppDelegate.h */,
@@ -170,6 +171,15 @@
 				7A70363918A37185007CAD3F /* MCUtility.m */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		7A70363E18A381B4007CAD3F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7A70363B18A381A5007CAD3F /* MoodFeed.h */,
+				7A70363C18A381A5007CAD3F /* MoodFeed.m */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +243,6 @@
 				2BA4851113F1E6CC000BABB3 /* MainStoryboard_iPhone.storyboard in Resources */,
 				7A1C4F1818A0F6FD003E45C6 /* squareBlackPNG.png in Resources */,
 				2BA4851813F1E6DB000BABB3 /* squarePNG.png in Resources */,
-				2BA4851A13F1EC39000BABB3 /* ReadMe.txt in Resources */,
 				2B0EF004170E3E3A008EDA06 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +257,7 @@
 				7A6FE368189F379100C6C51F /* ImageProcessing.m in Sources */,
 				2BA4850713F1E6AA000BABB3 /* MoodChangerAppDelegate.m in Sources */,
 				7A6FE36C189F383D00C6C51F /* SmileDetector.m in Sources */,
+				7A70363D18A381A5007CAD3F /* MoodFeed.m in Sources */,
 				2BA4851713F1E6DB000BABB3 /* main.m in Sources */,
 				7A70363A18A37185007CAD3F /* MCUtility.m in Sources */,
 				2B0EF002170E3E27008EDA06 /* MoodChangerViewController.m in Sources */,
