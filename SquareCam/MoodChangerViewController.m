@@ -58,15 +58,8 @@
 
 @implementation MoodChangerViewController
 
-- (void)dealloc
-{
+- (void)dealloc {
 	[_capture stop];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -74,7 +67,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  _capture = [SmileDetector new];
+  _capture = [SmileDetector newWithDelegate:self];
   [_capture start];
 }
 

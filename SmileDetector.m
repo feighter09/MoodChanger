@@ -11,17 +11,17 @@
 
 @implementation SmileDetector
 
-+ (id)new {
-  return [[SmileDetector alloc] init];
++ (id)newWithDelegate:(id)delegate {
+  return [[SmileDetector alloc] initWithDelegate:delegate];
 }
 
-- (id)init {
+- (id)initWithDelegate:(id)delegate {
   if (self = [super init]) {
+    _delegate = delegate;
     _square = [UIImage imageNamed:@"squarePNG"];
-    
     _faceDetector = [CIDetector detectorOfType:CIDetectorTypeFace
                                        context:nil
-                                       options:@{CIDetectorAccuracy: CIDetectorAccuracyHigh}];
+                                       options:@{CIDetectorAccuracy: CIDetectorAccuracyLow}];
   }
   
   return self;

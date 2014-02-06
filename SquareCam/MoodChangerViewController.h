@@ -50,7 +50,7 @@
 #import "SmileDetector.h"
 @class CIDetector;
 
-@interface MoodChangerViewController : UIViewController
+@interface MoodChangerViewController : UIViewController <SmileDetectorDelegate>
 
 @property (strong, nonatomic) IBOutlet UIView *previewView;
 @property (strong, nonatomic) SmileDetector *capture;
